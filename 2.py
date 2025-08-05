@@ -6,16 +6,16 @@ import threading
 
 # Configuration
 BOT_TOKEN = "7747847120:AAGYuaPr_9lzNa1dUw10SraTVp0OzF8k7Kg"
-API_KEY = "m4@1234"
-API_URL = "https://likes.api.freefireofficial.com/api/{region}/{uid}?key=" + API_KEY
+API_KEY = "GREAT"
+API_URL = "https://likexthug.vercel.app/like/{region}/{uid}?key=" + API_KEY
 
 SUPPORTED_REGIONS = {
     "ind", "sg", "eu", "me", "id", "bd", "ru", "vn",
     "tw", "th", "pk", "br", "sac", "us", "cis", "na"
 }
 
-OWNER_IDS = {7029114703, 7334894172}  # 👑
-VIP_IDS = {1234567890, 9876543210}     # ⭐
+OWNER_IDS = {7029114703,6632157651}  # 👑
+VIP_IDS = {7029114703,6632157651}     # ⭐
 
 # Usage limit
 DAILY_LIMITS = {
