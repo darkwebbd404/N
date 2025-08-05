@@ -7,7 +7,7 @@ import threading
 # Configuration
 BOT_TOKEN = "7747847120:AAGYuaPr_9lzNa1dUw10SraTVp0OzF8k7Kg"
 API_KEY = "GREAT"
-API_URL = "https://likexthug.vercel.app/like/{region}/{uid}?key=" + API_KEY
+API_URL = "https://likexthug.vercel.app/like?/{region}/{uid}?key=" + API_KEY
 
 SUPPORTED_REGIONS = {
     "ind", "sg", "eu", "me", "id", "bd", "ru", "vn",
