@@ -11,14 +11,14 @@ bot = telebot.TeleBot(BOT_TOKEN)
 DATA_FILE = "data.json"
 REMAINS_FILE = "like_remains.json"
 MAX_DAILY_LIKES = 1
-ADMIN_USER_ID = 1772119986
+ADMIN_USER_ID = 6632157651
 
 # --------------------- JSON DB ---------------------
 def load_data():
     if not os.path.exists(DATA_FILE):
         data = {
             "vip_users": [ADMIN_USER_ID],
-            "allowed_groups": [-1002727846121, ]
+            "allowed_groups": [-1002727846121, -1002482300506 ]
         }
         save_data(data)
         return data
