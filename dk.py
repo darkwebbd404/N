@@ -92,14 +92,14 @@ def process_like(message, region, uid):
         result = response.get("response", {})
 
         caption = (
-    f"✅ *Like Added Successfully!*\n"
-    f"🔹 *UID:* {result.get('UID', 'N/A')}\n"
-    f"🔸 *Player Nickname:* {result.get('PlayerNickname', 'N/A')}\n"
-    f"📤 *Likes Before:* {result.get('LikesbeforeCommand', 'N/A')}\n"
-    f"📥 *Likes After:* {result.get('LikesafterCommand', 'N/A')}\n"
-    f"❤️ *Likes By Bot:* {result.get('LikesGivenByAPI', 'N/A')}\n\n"
-    f"🔥 *SHARE US FOR MORE:*\nhttps://t.me/freefireproxyserver"
-)
+            f"✅ LIKE SUCCESSFULLY SEND\n\n"
+            f"✨ NAME: `{res.get('PlayerNickname', 'N/A')}`\n"
+            f"✨ UID: `{uid}`\n"
+            f"✨ Like Before Command: `{res.get('LikesbeforeCommand', 0)}`\n"
+            f"✨ Like After Command: `{res.get('LikesafterCommand', 0)}`\n"
+            f"✨ Like Given By Bot: `{res.get('LikesGivenByAPI', 0)}`\n"
+            f"📅 Valid Till: `{res.get('expire_date')}`"
+        )
 
         try:
             photos = bot.get_user_profile_photos(user_id)
